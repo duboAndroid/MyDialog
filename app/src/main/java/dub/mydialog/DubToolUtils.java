@@ -12,20 +12,11 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class DubToolUtils {
     private static DubAlertDialog alterDialog = null;
     private static DubCustomDialog loadingDialog = null;
-
-    public static void showLongHintInfo(Context context, String text) {
-        Toast.makeText(context, text, Toast.LENGTH_LONG).show();
-    }
-
-    public static void showShortHintInfo(Context context, String text) {
-        Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
-    }
 
     public static void showHintInfoDialog(Context context, String message) {
         showAlertInfoDialog(context, "提示", message, "知道了", null);
